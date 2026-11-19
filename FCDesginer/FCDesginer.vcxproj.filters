@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{d6ceefa1-6406-4e98-b77d-0d6dda81caef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32Utils">
+      <UniqueIdentifier>{b66e5413-ed6b-47ef-b8a0-eddaa6ab4900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CWindow">
+      <UniqueIdentifier>{01fd2f3d-ff20-42d0-8058-d83b451ce94b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{1bdf4ef9-2992-4aec-8009-24a01df2e546}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CNesHeader.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CFileUtils.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CPathUtils.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CStrUtils.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CFileVersion.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CCrc32Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CNesCombineUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CProcessUtils.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CIniHelper.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CRegUtils.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CFolderUtils.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CRegisterUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CWmiUtils.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CWindow\CDialogBase.h">
+      <Filter>CWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CIniHelperEx.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CWindowDraw.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CUnifHelper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CConsoleHelper.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Utils\CComFileDlg.h">
+      <Filter>Win32Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CDesignDialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomMenuData.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CBitmapDraw.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CDesignRegisterUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CWinHttpClient.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\fcjson.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CWindow\CWindowBase.h">
+      <Filter>CWindow</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FCDesginer.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CNesHeader.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CFileUtils.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CPathUtils.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CStrUtils.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CFileVersion.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CCrc32Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CNesCombineUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CProcessUtils.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CIniHelper.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CRegUtils.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CFolderUtils.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CRegisterUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CWmiUtils.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CWindow\CDialogBase.cpp">
+      <Filter>CWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CIniHelperEx.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CWindowDraw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CUnifHelper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CConsoleHelper.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Utils\CComFileDlg.cpp">
+      <Filter>Win32Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CDesignDialog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CCustomMenuData.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CBitmapDraw.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CDesignRegisterUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CDesignDialogMsgProc.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CDesignDialogMouseMsg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CDesignDialogDraw.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CDesignDialogMsgMapping.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CWinHttpClient.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\fcjson.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CWindow\CWindowBase.cpp">
+      <Filter>CWindow</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="ico00001.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="icon_lite.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\nesasm.exe" />
+    <None Include="Data\menu\coolgirl_final_data.asm">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="Data\menu\coolboy_final_data.asm">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="menu_chr.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="chr_data.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="data\chr_data.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="daata\chr_data.bin">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1421adae-c6c3-449c-a945-edc1f624da9f}</ProjectGuid>
+    <RootNamespace>FCDesginer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>FCDesginer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Int\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Int\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Int\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_Debug_x86</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Int\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_x86</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CCustomMenuData.h" />
+    <ClInclude Include="CDesignDialog.h" />
+    <ClCompile Include="CCustomMenuData.cpp" />
+    <ClCompile Include="CDesignDialogDraw.cpp" />
+    <ClCompile Include="CDesignDialogMsgProc.cpp" />
+    <ClCompile Include="CDesignDialogMouseMsg.cpp" />
+    <ClCompile Include="CDesignDialogMsgMapping.cpp" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="CWindowDraw.h" />
+    <ClInclude Include="CWindow\CDialogBase.h" />
+    <ClInclude Include="CWindow\CWindowBase.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Utils\CBitmapDraw.h" />
+    <ClInclude Include="Utils\CCrc32Utils.h" />
+    <ClInclude Include="Utils\CDesignRegisterUtils.h" />
+    <ClInclude Include="Utils\CNesCombineUtils.h" />
+    <ClInclude Include="Utils\CNesHeader.h" />
+    <ClInclude Include="Utils\CRegisterUtils.h" />
+    <ClInclude Include="Utils\CUnifHelper.h" />
+    <ClInclude Include="Utils\CWinHttpClient.h" />
+    <ClInclude Include="Utils\fcjson.h" />
+    <ClInclude Include="Win32Utils\CComFileDlg.h" />
+    <ClInclude Include="Win32Utils\CConsoleHelper.h" />
+    <ClInclude Include="Win32Utils\CFileUtils.h" />
+    <ClInclude Include="Win32Utils\CFileVersion.h" />
+    <ClInclude Include="Win32Utils\CFolderUtils.h" />
+    <ClInclude Include="Win32Utils\CIniHelper.h" />
+    <ClInclude Include="Win32Utils\CIniHelperEx.h" />
+    <ClInclude Include="Win32Utils\CPathUtils.h" />
+    <ClInclude Include="Win32Utils\CProcessUtils.h" />
+    <ClInclude Include="Win32Utils\CRegUtils.h" />
+    <ClInclude Include="Win32Utils\CStrUtils.h" />
+    <ClInclude Include="Win32Utils\CWmiUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FCDesginer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CDesignDialog.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="CWindowDraw.cpp" />
+    <ClCompile Include="CWindow\CDialogBase.cpp" />
+    <ClCompile Include="CWindow\CWindowBase.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Utils\CBitmapDraw.cpp" />
+    <ClCompile Include="Utils\CCrc32Utils.cpp" />
+    <ClCompile Include="Utils\CDesignRegisterUtils.cpp" />
+    <ClCompile Include="Utils\CNesCombineUtils.cpp" />
+    <ClCompile Include="Utils\CNesHeader.cpp" />
+    <ClCompile Include="Utils\CRegisterUtils.cpp" />
+    <ClCompile Include="Utils\CUnifHelper.cpp" />
+    <ClCompile Include="Utils\CWinHttpClient.cpp" />
+    <ClCompile Include="Utils\fcjson.cpp" />
+    <ClCompile Include="Win32Utils\CComFileDlg.cpp" />
+    <ClCompile Include="Win32Utils\CConsoleHelper.cpp" />
+    <ClCompile Include="Win32Utils\CFileUtils.cpp" />
+    <ClCompile Include="Win32Utils\CFileVersion.cpp" />
+    <ClCompile Include="Win32Utils\CFolderUtils.cpp" />
+    <ClCompile Include="Win32Utils\CIniHelper.cpp" />
+    <ClCompile Include="Win32Utils\CIniHelperEx.cpp" />
+    <ClCompile Include="Win32Utils\CPathUtils.cpp" />
+    <ClCompile Include="Win32Utils\CProcessUtils.cpp" />
+    <ClCompile Include="Win32Utils\CRegUtils.cpp" />
+    <ClCompile Include="Win32Utils\CStrUtils.cpp" />
+    <ClCompile Include="Win32Utils\CWmiUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ico00001.ico" />
+    <Image Include="icon.ico" />
+    <Image Include="icon_lite.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chr_data.bin" />
+    <None Include="daata\chr_data.bin" />
+    <None Include="data\chr_data.bin" />
+    <None Include="Data\menu\coolboy_final_data.asm" />
+    <None Include="Data\menu\coolgirl_final_data.asm" />
+    <None Include="Data\nesasm.exe" />
+    <None Include="menu_chr.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
